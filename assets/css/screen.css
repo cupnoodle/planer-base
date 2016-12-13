@@ -1,0 +1,250 @@
+/* ==========================================================================
+   Table of Contents
+   ========================================================================== */
+
+/*
+
+    0.  Normalize
+    1.  Icons
+    2.  General
+    3.  Utilities
+    4.  General
+    5.  Single Post
+    6.  Author Profile
+    7.  Read More
+    8.  Third Party Elements
+    9.  Pagination
+    10. Subscribe
+    11. Footer
+    12. Media Queries (Tablet)
+    13. Media Queries (Mobile)
+    14. Animations
+
+*/
+
+/* ==========================================================================
+   0. normalize.css v3.0.3 | MIT License | git.io/normalize | (minified)
+   ========================================================================== */
+
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+body { margin: 0; padding: 0;}
+article, aside, details,
+figcaption, figure,
+footer, header,
+main, menu, nav,
+section, summary { display:block; }
+audio, canvas, progress, video {
+    display: inline-block;
+    vertical-align: baseline;
+}
+audio:not([controls]) { display: none; height: 0; }
+[hidden], template { display: none; }
+a { background-color: transparent;}
+a:active, a:hover { outline: 0; }
+abbr[title] { border-bottom: 1px dotted; }
+b, strong { font-weight: bold; }
+dfn { font-style: italic; }
+h1 { font-size: 2em; margin: 0.67em 0; }
+mark { background: #ff0; color: #000; }
+small { font-size: 80%; }
+sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+img { border: 0; }
+svg:not(:root) { overflow: hidden; }
+figure { margin: 1em 40px; }
+hr { box-sizing: content-box; height: 0; }
+pre { overflow: auto; }
+code, kbd, pre, samp { font-family: monospace, monospace; font-size: 1em; }
+button, input, optgroup, select, textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+button { overflow: visible; }
+button, select { text-transform: none; }
+button, html input[type="button"],
+input[type="reset"], input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+button[disabled], html input[disabled] { cursor: default; }
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+input { line-height: normal; }
+input[type="checkbox"],
+input[type="radio"] { box-sizing: border-box; padding: 0; }
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button { height: auto; }
+input[type="search"] { -webkit-appearance: textfield; }
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+legend { border: 0; padding: 0; }
+textarea { overflow: auto; }
+optgroup { font-weight: bold; }
+table{ border-collapse: collapse; border-spacing: 0; }
+td, th{ padding: 0; }
+
+/* ==========================================================================
+   1. Icons - Sets up the icon font and respective classes
+   ========================================================================== */
+
+
+/* ==========================================================================
+   2. General - Setting up some base styles
+   ========================================================================== */
+html, body{
+    height: 100%;
+}
+
+body{
+    background-color: #F5F3EB;
+}
+
+.header-wrapper{
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    top: 20px;
+    bottom:  20px;
+
+    background-image: url('../images/gradient.jpg');
+    background-position: center top;
+    background-clip: content-box;
+    background-repeat: no-repeat;
+
+    z-index: 1;
+}
+
+.logo-wrapper{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #FFF;
+    color: #FFF;
+}
+
+.slogan-wrapper{
+    position: relative;
+    top: 50%;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: #FFF;
+    font-size: 1.25em;
+}
+
+.slogan-wrapper .description{
+    line-height: 1.5;
+    font-size: 2em;
+}
+
+.body-wrapper{
+    position: relative;
+    top: 80%;
+
+    
+    z-index: 2;
+}
+
+.content-wrapper{
+    margin-left: 12%;
+    margin-right: 12%;
+    padding: 3em;
+    line-height: 1.5;
+    background-color: #FFF;
+}
+
+.footer-wrapper{
+    margin-left: 12%;
+    margin-right: 12%;
+
+    margin-top: 20px;
+    height: 200px;
+
+    padding: 0;
+    line-height: 1.5;
+    z-index: 3;
+
+
+}
+
+
+/* ==========================================================================
+   12. Media Queries - Width Smaller than 769px
+   ========================================================================== */
+@media only screen and (max-width: 1280px) {
+    .slogan-wrapper{
+        top: 40%;
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    .header-wrapper{
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+
+    .slogan-wrapper{
+        font-size: 1em;
+        top: 30%;
+    }
+
+    .body-wrapper{
+        top: 70%;
+    }
+
+    .content-wrapper{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .footer-wrapper{
+        margin-left: 0;
+        margin-right: 0;
+        padding: 2em;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .slogan-wrapper{
+        top: 25%;
+        font-size: 0.8em;
+    }
+}
+
+@media only screen and (max-height: 569px) {
+
+    .slogan-wrapper{
+        top: 25%;
+    }
+}
+
+@media only screen and (max-height: 450px) {
+
+    .logo-wrapper{
+        top: 20px;
+        left: 20px;
+    }
+
+    .slogan-wrapper{
+       font-size: 0.7em;
+    }
+}
+
