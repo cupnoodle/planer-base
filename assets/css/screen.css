@@ -115,11 +115,13 @@ body{
 }
 
 .header-wrapper{
+    /*
     position: absolute;
     left: 20px;
     right: 20px;
     top: 20px;
     bottom:  20px;
+    */
 
     background-image: url('../images/gradient.jpg');
     background-position: center top;
@@ -131,17 +133,24 @@ body{
 
 .logo-wrapper{
     position: absolute;
-    top: 50px;
-    left: 50px;
+    top: 30px;
+    left: 30px;
     width: 50px;
     height: 50px;
     border: 1px solid #FFF;
     color: #FFF;
+
+    line-height: 50px;
+    text-align: center;
 }
 
 .slogan-wrapper{
+    /*
     position: relative;
     top: 50%;
+    */
+    padding-top: 30%;
+    padding-bottom: 2em;
     margin-left: 10%;
     margin-right: 10%;
     color: #FFF;
@@ -193,7 +202,7 @@ body{
     }
 }
 
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 768px) {
     .header-wrapper{
         left: 0;
         right: 0;
@@ -220,6 +229,23 @@ body{
         margin-right: 0;
         padding: 2em;
     }
+}
+
+@media only screen and (min-width: 769px){
+    .header-wrapper{
+        position: absolute;
+        left: 20px;
+        right: 20px;
+        top: 20px;
+        bottom:  20px;
+    }
+
+
+    .slogan-wrapper{
+        position: relative;
+        top: -10%;
+    }
+    
 }
 
 @media only screen and (max-width: 520px) {
