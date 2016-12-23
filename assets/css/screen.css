@@ -111,8 +111,19 @@ html, body{
 }
 
 body{
+    font-family:'Open Sans', sans-serif;
+    font-size: 17px;
     background-color: #F5F3EB;
 }
+
+a:link{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
 
 .header-wrapper{
     position: absolute;
@@ -133,14 +144,37 @@ body{
     position: absolute;
     top: 20px;
     left: 20px;
-    width: 50px;
     height: 50px;
     border: 2px solid #FFF;
     color: #FFF;
 
-    line-height: 50px;
+    line-height: 44px;
     text-align: center;
+    padding-left: 4px;
+    padding-right: 4px;
 }
+
+/* top right navigation bar */
+.nav-wrapper{
+    position: absolute;
+    top: 20px;
+    left: 80px;
+    right: 20px;
+    height: 50px;
+    color: #FFF;
+
+    text-align: right;
+    line-height: 50px;
+
+    z-index: 4;
+}
+
+.nav-wrapper a{
+    color: rgba(255,255,255,1.0);
+
+    padding-right: 0.5em;
+}
+
 
 .slogan-wrapper{
     position: relative;
@@ -170,15 +204,6 @@ body{
     color: rgba(255,255,255,1.0);
 }
 
-.slogan-wrapper a:link{
-    text-decoration: none;
-}
-
-.slogan-wrapper a:hover{
-    text-decoration: underline;
-}
-
-
 .body-wrapper{
     position: relative;
     top: 80%;
@@ -193,6 +218,8 @@ body{
     padding: 3em;
     line-height: 1.5;
     background-color: #FFF;
+
+    z-index: 2;
 }
 
 .footer-wrapper{
@@ -200,15 +227,49 @@ body{
     margin-right: 12%;
 
     margin-top: 20px;
-    height: 200px;
+    height: 100px;
 
     padding: 0;
-    line-height: 1.5;
+    line-height: 2;
     z-index: 3;
 
 
 }
 
+/* ==========================================================================
+   3. Bootstrap override
+   ========================================================================== */
+.navbar-default{
+    background-color: transparent;
+    border: none;
+}
+
+.navbar-header button{
+    
+}
+
+
+@media only screen and (max-width: 767px) {
+    .navbar-default ul{
+        background-color: #FFF;
+        
+    }
+
+    .navbar-default li{
+        border-bottom: 1px solid #DEDEDE;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .navbar a{
+        color: #FFF !important;
+    }
+
+    .navbar a:hover{
+        text-decoration: underline !important;
+    }
+
+}
 
 /* ==========================================================================
    12. Media Queries - Width Smaller than 769px
@@ -294,7 +355,7 @@ body{
     }
 
     .slogan-wrapper{
-        top: 10%;
+        top: 20%;
     }
 }
 
