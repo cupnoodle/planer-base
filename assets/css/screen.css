@@ -131,12 +131,15 @@ body{
 
 .logo-wrapper{
     position: absolute;
-    top: 50px;
-    left: 50px;
+    top: 20px;
+    left: 20px;
     width: 50px;
     height: 50px;
     border: 1px solid #FFF;
     color: #FFF;
+
+    line-height: 50px;
+    text-align: center;
 }
 
 .slogan-wrapper{
@@ -145,12 +148,16 @@ body{
     margin-left: 10%;
     margin-right: 10%;
     color: #FFF;
-    font-size: 1.25em;
+    font-size: 1.3em;
 }
 
 .slogan-wrapper .description{
     line-height: 1.5;
     font-size: 2em;
+}
+
+.slogan-wrapper .link{
+    font-size: 1.25em;
 }
 
 .body-wrapper{
@@ -189,7 +196,10 @@ body{
    ========================================================================== */
 @media only screen and (max-width: 1280px) {
     .slogan-wrapper{
+        /*
         top: 40%;
+        */
+        font-size: 1.3em;
     }
 }
 
@@ -202,8 +212,10 @@ body{
     }
 
     .slogan-wrapper{
-        font-size: 1em;
-        top: 30%;
+        font-size: 0.9em;
+        /*
+        top: 20%;
+        */
     }
 
     .body-wrapper{
@@ -224,19 +236,38 @@ body{
 
 @media only screen and (max-width: 520px) {
     .slogan-wrapper{
+
+        /*
         top: 25%;
+        */
         font-size: 0.8em;
     }
 }
 
-@media only screen and (max-height: 569px) {
+@media only screen and (max-width: 350px){
+    .slogan-wrapper{
+        /*
+        top: 5%;
+        */
+        font-size: 0.7em;
+    }
+}
+
+@media only screen and (min-height: 768px) {
+
+    .slogan-wrapper{
+        top: 35%;
+    }
+}
+
+@media only screen and (max-height: 767px) {
 
     .slogan-wrapper{
         top: 25%;
     }
 }
 
-@media only screen and (max-height: 450px) {
+@media only screen and (max-height: 600px) {
 
     .logo-wrapper{
         top: 20px;
@@ -244,7 +275,7 @@ body{
     }
 
     .slogan-wrapper{
-       font-size: 0.7em;
+        top: 10%;
     }
 }
 
