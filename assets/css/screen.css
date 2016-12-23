@@ -135,7 +135,7 @@ body{
     left: 20px;
     width: 50px;
     height: 50px;
-    border: 1px solid #FFF;
+    border: 2px solid #FFF;
     color: #FFF;
 
     line-height: 50px;
@@ -149,6 +149,8 @@ body{
     margin-right: 10%;
     color: #FFF;
     font-size: 1.3em;
+
+    text-shadow: 2px 2px 4px #333;
 }
 
 .slogan-wrapper .description{
@@ -156,9 +158,26 @@ body{
     font-size: 2em;
 }
 
+.slogan-wrapper .description a{
+    color: rgba(255,255,255,0.5);
+}
+
 .slogan-wrapper .link{
     font-size: 1.25em;
 }
+
+.slogan-wrapper .link a{
+    color: rgba(255,255,255,1.0);
+}
+
+.slogan-wrapper a:link{
+    text-decoration: none;
+}
+
+.slogan-wrapper a:hover{
+    text-decoration: underline;
+}
+
 
 .body-wrapper{
     position: relative;
