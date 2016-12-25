@@ -177,7 +177,7 @@ a:hover{
 
 
 .slogan-wrapper{
-    position: relative;
+    position: absolute;
     top: 50%;
     margin-left: 10%;
     margin-right: 10%;
@@ -243,11 +243,11 @@ a:hover{
 .post{
     padding-top: 1em;
     position: relative;
-    border-bottom: 2px solid #CCC;
+    border-bottom: 1px solid #EEE;
 }
 
-.post a {
-
+.post:hover{
+    cursor: pointer;
 }
 
 .post-title{
@@ -257,16 +257,58 @@ a:hover{
 
 }
 
+.post-title a{
+    color: #333333;
+    text-decoration: none;
+
+    /* First we need to help some browsers along for this to work.
+     Just because a vendor prefix is there, doesn't mean it will
+     work in a browser made by that vendor either, it's just for
+     future-proofing purposes I guess. */
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    /* ...and now for the proper property */
+    transition:.5s;
+}
+
+.post-title a:hover, .post-title a.hover{
+    /* red */
+    color: #DC4133;
+}
+
 .post-time{
     float: right;
     width: 7.5em;
-
+    margin-top: 0.4em;
     text-align: right;
+}
+
+.post-time a{
+    color: #BBBBBB;
+    text-decoration: none;
+
+    /* First we need to help some browsers along for this to work.
+     Just because a vendor prefix is there, doesn't mean it will
+     work in a browser made by that vendor either, it's just for
+     future-proofing purposes I guess. */
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    /* ...and now for the proper property */
+    transition:.5s;
+
+}
+
+.post-time a:hover, .post-time a.hover{
+    color: #444444;
 }
 
 .post-excerpt{
     clear: both;
-    
+
     padding-top: 1.0em;
     font-size: 1.0em;
 }
