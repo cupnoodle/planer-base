@@ -215,7 +215,11 @@ a:hover{
 .content-wrapper{
     margin-left: 12%;
     margin-right: 12%;
-    padding: 3em;
+    padding-left: 10em;
+    padding-right: 10em;
+    padding-top: 3em;
+    padding-bottom: 3em;
+
     line-height: 1.5;
     background-color: #FFF;
 
@@ -234,6 +238,37 @@ a:hover{
     z-index: 3;
 
 
+}
+
+.post{
+    padding-top: 1em;
+    position: relative;
+    border-bottom: 2px solid #CCC;
+}
+
+.post a {
+
+}
+
+.post-title{
+    float: left;
+    font-size: 1.5em;
+    font-weight: bold;
+
+}
+
+.post-time{
+    float: right;
+    width: 7.5em;
+
+    text-align: right;
+}
+
+.post-excerpt{
+    clear: both;
+    
+    padding-top: 1.0em;
+    font-size: 1.0em;
 }
 
 /* ==========================================================================
@@ -281,6 +316,11 @@ a:hover{
         */
         font-size: 1.3em;
     }
+
+    .content-wrapper{
+        padding-left: 4em;
+        padding-right: 4em;
+    }
 }
 
 @media only screen and (max-width: 769px) {
@@ -305,6 +345,9 @@ a:hover{
     .content-wrapper{
         margin-left: 0;
         margin-right: 0;
+
+        padding-left: 2em;
+        padding-right: 2em;
     }
 
     .footer-wrapper{
