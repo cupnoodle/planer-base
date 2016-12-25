@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-  $(".post").hover(
+  $(".post-list").hover(
     function() {
       $( this ).find("a").addClass("hover");
       //$( this ).find("a").trigger("mouseenter");
@@ -9,9 +9,9 @@ $( document ).ready(function() {
     }
   );
 
-  $(".post").click(function(){
+  $(".post-list").click(function(){
     //$(this).find(".post-title a")[0].click();
-    var link = $(this).find(".post-title a").attr("href");
+    var link = $(this).find(".post-list-title a").attr("href");
     location = link;
   });
 

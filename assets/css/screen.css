@@ -240,24 +240,24 @@ a:hover{
 
 }
 
-.post{
+.post-list{
     padding-top: 1em;
     position: relative;
     border-bottom: 1px solid #EEE;
 }
 
-.post:hover{
+.post-list:hover{
     cursor: pointer;
 }
 
-.post-title{
+.post-list-title{
     float: left;
     font-size: 1.5em;
     font-weight: bold;
 
 }
 
-.post-title a{
+.post-list-title a{
     color: #333333;
     text-decoration: none;
 
@@ -273,19 +273,19 @@ a:hover{
     transition:.5s;
 }
 
-.post-title a:hover, .post-title a.hover{
+.post-list-title a:hover, .post-list-title a.hover{
     /* red */
     color: #DC4133;
 }
 
-.post-time{
+.post-list-time{
     float: right;
     width: 7.5em;
     margin-top: 0.4em;
     text-align: right;
 }
 
-.post-time a{
+.post-list-time a{
     color: #BBBBBB;
     text-decoration: none;
 
@@ -302,15 +302,17 @@ a:hover{
 
 }
 
-.post-time a:hover, .post-time a.hover{
+.post-list-time a:hover, .post-time a.hover{
     color: #444444;
 }
 
-.post-excerpt{
+.post-list-excerpt{
     clear: both;
 
     padding-top: 1.0em;
     font-size: 1.0em;
+
+    color: #666666;
 }
 
 /* ==========================================================================
