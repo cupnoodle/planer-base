@@ -458,10 +458,12 @@ a:hover{
 
 .post-footer-content{
     color: #444444;
+    font-weight: bold;
 }
 
 .post-footer-content a, .post-footer-content a:link, post-footer-content a:hover{
     color: #444444;
+
 }
 
 .sharing{
