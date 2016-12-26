@@ -101,7 +101,39 @@ td, th{ padding: 0; }
 /* ==========================================================================
    1. Icons - Sets up the icon font and respective classes
    ========================================================================== */
+@font-face {
 
+    font-family: 'icomoon';
+    src: url('../fonts/icons.eot?buy619');
+    src: url('../fonts/icons.eot?#iefixbuy619') format('embedded-opentype'), url('../fonts/icons.woff?buy619') format('woff'), url('../fonts/icons.ttf?buy619') format('truetype'), url('../fonts/icons.svg?buy619#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.icon-facebook:before {
+    content: "\e0e4"
+}
+
+.icon-googleplus:before {
+    content: "\e0ea"
+}
+
+.icon-twitter:before {
+    content: "\e0f8"
+}
 
 /* ==========================================================================
    2. General and Wrappers - Setting up some base styles
@@ -250,6 +282,12 @@ a:hover{
 
 }
 
+.clearfix{
+    clear: both;
+    height: 1px;
+    width: 100%;
+}
+
 /* ==========================================================================
    3. Post list and post
    ========================================================================== */
@@ -307,12 +345,12 @@ a:hover{
      Just because a vendor prefix is there, doesn't mean it will
      work in a browser made by that vendor either, it's just for
      future-proofing purposes I guess. */
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
+    -o-transition:.25s;
+    -ms-transition:.25s;
+    -moz-transition:.25s;
+    -webkit-transition:.25s;
     /* ...and now for the proper property */
-    transition:.5s;
+    transition:.25s;
 
 }
 
@@ -368,16 +406,23 @@ a:hover{
 
 .post-footer{
     font-size:0.8em;
-    font-weight: bold;
-    margin-top: 3em;
+    font-weight: 400;
+    margin-top: 4em;
+
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
 
     color: #AAAAAA;
+
+    border-top: 1px solid #EEE;
+    border-bottom: 1px solid #EEE;
 }
 
 .post-footer div{
     display: inline-block;
     margin-right: 2em;
     margin-top: 1em;
+
 }
 
 .post-footer-content{
@@ -385,6 +430,36 @@ a:hover{
 }
 
 .post-footer-content a, .post-footer-content a:link, post-footer-content a:hover{
+    color: #444444;
+}
+
+.sharing{
+    float:right;
+}
+
+.sharing a{
+    font-size: 28px;
+    width: 22px;
+    margin-left: 1px;
+    margin-top: 4px;
+    color: #d4d4d4;
+    display: inline-block;
+    vertical-align: middle;
+
+    text-decoration: none;
+    /* First we need to help some browsers along for this to work.
+     Just because a vendor prefix is there, doesn't mean it will
+     work in a browser made by that vendor either, it's just for
+     future-proofing purposes I guess. */
+    -o-transition:.25s;
+    -ms-transition:.25s;
+    -moz-transition:.25s;
+    -webkit-transition:.25s;
+    /* ...and now for the proper property */
+    transition:.25s;
+}
+
+.sharing a:hover{
     color: #444444;
 }
 
