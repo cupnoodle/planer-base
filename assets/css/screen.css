@@ -30,6 +30,9 @@ html {
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%
+
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
 }
 body { margin: 0; padding: 0;}
 article, aside, details,
@@ -171,7 +174,7 @@ a:hover{
 
     z-index: 1;
 
-    font-family: "Karla", serif;
+    font-family: serif;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
 }
@@ -396,9 +399,18 @@ a:hover{
 
 }
 
-.post-title{
-    font-size: 1.5em;
+.post-header .tags a{
+    color: #444;
+    text-decoration: none;
     font-weight: bold;
+    font-size: 0.95em;
+}
+
+.post-title{
+    font-size: 1.7em;
+    font-weight: bold;
+    font-family: serif;
+
 }
 
 .post-meta{
@@ -429,7 +441,7 @@ a:hover{
     margin-top: 4em;
 
     padding-top: 1.5em;
-    padding-bottom: 1.5em;
+    padding-bottom: 0.7em;
 
     color: #AAAAAA;
 
