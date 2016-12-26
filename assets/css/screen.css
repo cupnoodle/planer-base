@@ -233,7 +233,7 @@ a:hover{
 
 
 .slogan-wrapper{
-    position: relative;
+    position: absolute;
     top: -200px;
     left: -2em;
     margin-left: 12%;
